@@ -4,7 +4,7 @@ const port = 3000;
 
 app.use(express.json());
 
-app.post('/api/message', (req, res) => {
+app.post('/message', (req, res) => {
   const userMessage = req.body.message;
   console.log('收到前端信息:', userMessage);
 
